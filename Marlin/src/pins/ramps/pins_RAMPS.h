@@ -568,11 +568,11 @@
         #define DOGLCD_MOSI          EXP1_08_PIN
         #define DOGLCD_SCK           EXP1_06_PIN
       #else
-        #define LCD_PINS_RS          EXP1_07_PIN
-        #define LCD_PINS_ENABLE      EXP1_08_PIN
-        #define LCD_PINS_D4          EXP1_06_PIN
-        #define LCD_PINS_D5          EXP1_05_PIN
-        #define LCD_PINS_D6          EXP1_04_PIN
+//        #define LCD_PINS_RS          EXP1_07_PIN
+//        #define LCD_PINS_ENABLE      EXP1_08_PIN
+//        #define LCD_PINS_D4          EXP1_06_PIN
+//        #define LCD_PINS_D5          EXP1_05_PIN
+//        #define LCD_PINS_D6          EXP1_04_PIN
       #endif
 
       #define LCD_PINS_D7            EXP1_03_PIN
@@ -601,21 +601,22 @@
   //
   // LCD Display input pins
   //
+  
   #if IS_NEWPANEL
 
     #if IS_RRD_SC
 
-      #define BEEPER_PIN             EXP1_10_PIN
+      //#define BEEPER_PIN             EXP1_10_PIN
 
       #if ENABLED(CR10_STOCKDISPLAY)
         #define BTN_EN1              EXP1_08_PIN
         #define BTN_EN2              EXP1_06_PIN
       #else
-        #define BTN_EN1              EXP2_08_PIN
-        #define BTN_EN2              EXP2_06_PIN
+        //#define BTN_EN1              EXP2_08_PIN
+        //#define BTN_EN2              EXP2_06_PIN
       #endif
 
-      #define BTN_ENC                EXP1_09_PIN
+      //#define BTN_ENC                EXP1_09_PIN
       #ifndef SD_DETECT_PIN
         #define SD_DETECT_PIN        EXP2_04_PIN
       #endif
@@ -779,7 +780,7 @@
 
     #else
 
-      #define BEEPER_PIN             EXP2_06_PIN
+      //#define BEEPER_PIN             EXP2_06_PIN
 
       // Buttons are directly attached to AUX-2
       #if ENABLED(PANEL_ONE)
@@ -787,15 +788,17 @@
         #define BTN_EN2                       63  // AUX2 PIN 4
         #define BTN_ENC              EXP2_04_PIN
       #else
-        #define BTN_EN1              EXP1_10_PIN
-        #define BTN_EN2              EXP1_09_PIN
-        #define BTN_ENC              EXP2_08_PIN
+        //#define BTN_EN1              EXP1_10_PIN
+        //#define BTN_EN2              EXP1_09_PIN
+        //#define BTN_ENC              EXP2_08_PIN
       #endif
 
     #endif
   #endif // IS_NEWPANEL
 
 #endif // HAS_WIRED_LCD
+
+
 
 #if IS_RRW_KEYPAD && !HAS_ADC_BUTTONS
   #define SHIFT_OUT_PIN                       40

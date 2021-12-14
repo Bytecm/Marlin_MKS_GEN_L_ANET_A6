@@ -50,4 +50,18 @@
   #define Y_CS_PIN 63
 #endif
 
+// ANET A6 Full graphic display with rotary encoder on Ext1
+// This needs an adapter! VCC and GND is reversed on the Anet display!!
+// 28.06.2018 NeoCortex / JulixPawel@gmail.com
+#if ENABLED(ANET_FULL_GRAPHICS_LCD)
+  #define LCD_PINS_RS         35 // CS chip select /SS chip slave select
+  #define LCD_PINS_ENABLE     16 // SID (MOSI)
+  #define LCD_PINS_D4         25 // SCK (CLK) clock
+  #define KILL_PIN            29 // reset
+  #define BTN_EN1             27 // encoder left
+  #define BTN_EN2             23 // encoder right
+  #define BTN_ENC             17 // encoder click
+  #define BEEPER_PIN          37 // beeper
+#endif
+
 #include "pins_RAMPS.h"
