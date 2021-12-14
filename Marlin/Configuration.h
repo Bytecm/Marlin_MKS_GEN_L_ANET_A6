@@ -954,7 +954,7 @@
  * Override with M201
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 9000, 5000, 100, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 9000, 5000, 50, 10000 }
 
 										 
 													   
@@ -974,6 +974,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
+
+								  
+							  
 #define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
@@ -1264,7 +1267,7 @@
 																  
 	  
 
-   
+
  * Multiple Probing
  *
  * You may get improved results by probing 2 or more times.
@@ -1294,6 +1297,10 @@
 #define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
 	 
+																	  
+																		   
+	  
+
 #define Z_CLEARANCE_MULTI_PROBE     10 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
 	  
@@ -1370,6 +1377,9 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR true
+						   
+							
+		   
 #define INVERT_Y_DIR true
 #define INVERT_Z_DIR false
 		   
@@ -1382,7 +1392,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1420,6 +1430,26 @@
 // @section machine
 
 // The size of the printable area
+						
+						
+
+																	   
+					 
+					 
+							  
+							  
+					 
+					   
+
+								  
+						
+						
+					 
+					 
+					 
+					   
+
+										 
 #define X_BED_SIZE 222
 #define Y_BED_SIZE 222
 
@@ -2458,6 +2488,8 @@
 //
 																						 
   
+																						 
+  
 //#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 									
 									
@@ -2483,6 +2515,8 @@
 //#define miniVIKI
 
 //
+													
+  
 													
   
 					
@@ -2557,6 +2591,8 @@
 //#define FYSETC_GENERIC_12864_1_1 // Larger display with basic ON/OFF backlight.
 
 //
+																									   
+  
 																									   
   
 						   
@@ -2704,6 +2740,8 @@
 //
 													
   
+													
+  
 								
 
   
@@ -2739,6 +2777,9 @@
 #endif
 
 //
+										
+														
+  
 										
 														
   
@@ -2835,6 +2876,8 @@
 //#define BIQU_BX_TFT70
 
 //
+																			  
+  
 																			  
   
 							
